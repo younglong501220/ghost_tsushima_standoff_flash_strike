@@ -1,0 +1,6 @@
+{
+  "name": "對馬戰鬼：對峙與一閃",
+  "description": "Ghost of Tsushima 風格純合成音效武士決鬥遊戲：體驗對峙拔刀、完美招架、看破閃避與黑澤明電影模式。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Serif TC', 'Cinzel', serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Noto Serif TC', serif;
+}
+
+.font-kanji {
+  font-family: 'Noto Serif TC', serif;
+}
+
+.font-display {
+  font-family: 'Cinzel Decorative', 'Noto Serif TC', serif;
+}
+
+/* Kurosawa Vintage Film Grain Effect */
+.kurosawa-filter {
+  filter: grayscale(100%) contrast(140%) brightness(95%);
+}
+
+.film-grain {
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 0);
+  background-size: 4px 4px;
+}
+
+@keyframes filmScratch {
+  0% { transform: translateX(0); opacity: 0.15; }
+  25% { transform: translateX(-20px); opacity: 0.4; }
+  50% { transform: translateX(35px); opacity: 0.2; }
+  75% { transform: translateX(-10px); opacity: 0.35; }
+  100% { transform: translateX(15px); opacity: 0.15; }
+}
+
+.animate-film-scratch {
+  animation: filmScratch 0.12s steps(2) infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f2a24;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
